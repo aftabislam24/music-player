@@ -3,6 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 139, 139, 0.663);
 }
 .m-player{
     height: 27.5rem;
@@ -10,7 +11,11 @@ body{
     background-color: darkcyan;
     position: relative;
     border-radius: 1rem;
-    box-shadow: 2.5px 2.5px 5px darkcyan , -2.5px -2.5px 5px darkcyan;
+    box-shadow: 2.5px 2.5px 5px black , -2.5px -2.5px 5px darkgrey;
+}
+.content li{
+    display: flex;
+    align-items: center;
 }
 .content li{
     list-style-type: none;
@@ -21,14 +26,15 @@ body{
     position: relative;
     left: -1.8rem;
     border-radius: 1rem;
-    box-shadow: 2.5px 2.5px 3px darkgray , -2.5px -2.5px 3px white;
+    box-shadow: 2px 2px 3px black , -2px -2px 3px grey;
 }
 img {
     height: 3rem;
     width: 3rem;
-    background-color: blue;
     border-right: 2px solid black;
     border-radius: 1rem;
+    margin-right: 1rem;
+
 }
 button{
     height: 3.5rem;
@@ -59,5 +65,11 @@ button{
     position: relative;
     left: 21px;
     top: 5px;
+    border-radius: 1rem;
+}
+.progress-bar>.status{
+    height: 0.75rem;
+    width: 0%;
+    background-color: crimson;
     border-radius: 1rem;
 }
